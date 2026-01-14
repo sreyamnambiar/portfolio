@@ -1,0 +1,223 @@
+{
+  "personal": {
+    "name": "Sreya M Nambiar",
+    "title": "Pre-Final Year Student",
+    "greeting": "Hello, I'm",
+    "description": "Passionate about creating beautiful, functional, and user-centered digital experiences. Let's build something amazing together.",
+    "about": {
+      "heading": "Who I Am",
+      "paragraphs": [
+        "I'm a passionate Full Stack Developer with a love for creating elegant solutions to complex problems. With expertise in modern web technologies, I bring ideas to life through clean code and intuitive user interfaces.",
+        "My journey in tech started with curiosity and has evolved into a deep passion for building digital experiences that make a difference. I believe in continuous learning and staying updated with the latest trends in technology.",
+        "When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community."
+      ]
+    },
+    "contact": {
+      "email": "sreyamnambiar2005@gmail.com",
+      "location": "Chennai, India",
+      "phone": ""
+    },
+    "social": {
+      "github": "https://github.com/sreyamnambiar",
+      "linkedin": "https://www.linkedin.com/in/sreya-m-nambiar-5881aa27b"
+    }
+  },
+  "skills": [
+    { "name": "HTML", "color": "#E34F26", "icon": "FaHtml5" },
+    { "name": "CSS", "color": "#1572B6", "icon": "FaCss3Alt" },
+    { "name": "JavaScript", "color": "#F7DF1E", "icon": "FaJs" },
+    { "name": "React", "color": "#61DAFB", "icon": "FaReact" },
+    { "name": "Node.js", "color": "#339933", "icon": "FaNodeJs" },
+    { "name": "MySQL", "color": "#4479A1", "icon": "FaDatabase" },
+    { "name": "PostgreSQL", "color": "#336791", "icon": "FaDatabase" },
+    { "name": "AWS CloudWatch", "color": "#FF9900", "icon": "FaAws" },
+    { "name": "Python", "color": "#3776AB", "icon": "FaPython" },
+    { "name": "Java", "color": "#007396", "icon": "FaJava" }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "AutoSupport Ticket System",
+      "description": "An intelligent automated ticket support system that classifies and prioritizes support tickets based on keyword analysis. Frontend developed and hosted in Vercel, backend uses Motia and hosted in Railway.",
+      "image": "/autosupport-logo.png",
+      "architecture": "/autosupport-architecture.png",
+      "tags": ["React", "Node.js", "MongoDB", "Railway", "Vercel"],
+      "category": "fullstack",
+      "teamType": "Individual",
+      "github": "https://github.com/sreyamnambiar/autosupport-frontend",
+      "githubBackend": "https://github.com/sreyamnambiar/autosupport-backend",
+      "live": "https://autosupport-frontend-c0bc16v3k-sreyamnambiar2005-1379s-projects.vercel.app/"
+    },
+    {
+      "id": 2,
+      "title": "Sign Language Recognition for Deaf Individuals",
+      "description": "An innovative application designed to help deaf individuals communicate through sign language recognition technology, making communication more accessible and inclusive.",
+      "image": "/deaf-individuals-logo.png",
+      "architectures": ["/deaf-individuals-architecture.png", "/deaf-individuals-architecture2.png"],
+      "tags": ["Open AI/Whisper ASR", "Python", "FastAPI"],
+      "category": "fullstack",
+      "teamType": "Teamwork",
+      "github": "https://github.com/sreyamnambiar/Deaf-individuals-",
+      "live": "https://youtu.be/CiCaBu_9ltI?si=zrsnULI3Gjx1UUH_"
+    },
+    {
+      "id": 3,
+      "title": "InclusiveHub - Accessibility Platform",
+      "description": "An accessibility platform that combines Gemini AI for speech-to-text functionality with Google Maps API for location-based services. Features AI chatbot, voice commands, and nearby search capabilities to help users find accessible places. Won at MLH Hackathon.",
+      "image": "/inclusivehub-logo.png",
+      "architecture": "/inclusivehub-architecture.png",
+      "tags": ["React", "TypeScript", "Google Gemini API", "Google Maps API", "Tailwind CSS"],
+      "category": "fullstack",
+      "teamType": "Teamwork",
+      "github": "https://github.com/sreyamnambiar/mlh_hackathon_gemini",
+      "live": ""
+    },
+    {
+      "id": 4,
+      "title": "FinSakhi - Financial Education Platform",
+      "description": "An edutech investment platform designed for rural communities to promote financial literacy and inclusion. Features voice-first finance in local languages, personalized financial insights, gamified savings, emotional AI companion, skill and livelihood matching, community investment circles, and a digital financial twin.",
+      "image": "/finsakhi-logo-updated.png",
+      "architecture": "/finsakhi-architecture.png",
+      "tags": ["React", "TypeScript", "ElevenLabs", "Google Gemini API", "Vite", "Tailwind CSS"],
+      "category": "fullstack",
+      "teamType": "Teamwork",
+      "github": "https://github.com/sreyamnambiar/finsakhi",
+      "live": ""
+    },
+    {
+      "id": 5,
+      "title": "Malware Detection & File Upload Security",
+      "description": "A cybersecurity application that detects malware and identifies file upload vulnerabilities. When users upload images or files, the system analyzes them for potential security threats and vulnerabilities, providing detailed security assessments to prevent malicious uploads.",
+      "image": "/malware-logo.png",
+      "tags": ["Cybersecurity", "Malware Detection", "File Upload Security", "Vulnerability Analysis"],
+      "category": "fullstack",
+      "teamType": "Teamwork",
+      "github": "",
+      "live": ""
+    },
+    {
+      "id": 6,
+      "title": "MicroZard - Weed Detection System",
+      "description": "An innovative AI-powered weed detection system combining software and hardware to help farmers identify and manage weeds efficiently. A team project developed over 3 years to improve agricultural productivity through computer vision and machine learning.",
+      "image": "/microzard-logo.png",
+      "architecture": "/microzard-architecture.png",
+      "tags": ["Python", "YOLOv5", "Computer Vision", "AI/ML", "IoT", "Hardware Integration"],
+      "category": "fullstack",
+      "teamType": "Teamwork",
+      "github": "https://github.com/sreyamnambiar/microzard",
+      "live": ""
+    }
+  ],
+  "workExperience": [
+    {
+      "id": 1,
+      "company": "Sri Sairam Techno Incubation",
+      "role": "Full Stack Developer Intern",
+      "duration": "Aug 2025 - Sept 2025",
+      "location": "Chennai, Tamil Nadu, India",
+      "logo": "/sairam-logo.png",
+      "description": [
+        "During my internship, I developed an Inventory Management System using FastAPI and PostgreSQL as the database and explored AWS services and CloudWatch for performance monitoring and deployment insights."
+      ],
+      "technologies": ["Amazon Web Services (AWS)", "FastAPI", "PostgreSQL"]
+    },
+    {
+      "id": 2,
+      "company": "Sakthi Veera Green Energy Pvt ltd",
+      "role": "Intern",
+      "duration": "Jun 2025 - Aug 2025",
+      "location": "Chennai, Tamil Nadu, India",
+      "logo": "/veera-logo.png",
+      "description": [
+        "Developed a grant and loan web application where users can find various government grants and loans related to startups in India. Built using React for the frontend and Node.js with Google Sheets API for fetching the records from the Excel sheet."
+      ],
+      "technologies": ["React", "Node.js", "Google Sheets API"]
+    }
+  ],
+  "achievements": [
+    {
+      "icon": "FaTrophy",
+      "title": "Smart India Hackathon",
+      "year": "2024",
+      "status": "Winner",
+      "description": "Won SIH 2024",
+      "fullDescription": "Won the prestigious Smart India Hackathon 2024, competing against thousands of teams nationwide. Built an AntiDoping Edtech platform - an innovative solution providing awareness and education about anti-doping through our platform, addressing real-world problems with technology.",
+      "technologies": ["HTML", "CSS", "JavaScript", "Firebase"],
+      "images": ["/WhatsApp Image 2026-01-03 at 1.37.46 PM.jpeg", "/WhatsApp Image 2026-01-03 at 1.37.55 PM.jpeg"],
+      "linkedinUrl": "https://www.linkedin.com/posts/sreya-m-nambiar-5881aa27b_a-journey-that-began-with-just-an-idea-has-activity-7280269055616282624-u2wb?utm_source=share&utm_medium=member_android",
+      "websiteUrl": "https://deno-2024.vercel.app/"
+    },
+    {
+      "icon": "FaAward",
+      "title": "5-Day Cybersecurity Bootcamp",
+      "year": "2025",
+      "status": "Bootcamp",
+      "description": "Cybersecurity: Basics to Emerging Technologies",
+      "fullDescription": "Attended the Cyber Security bootcamp at Anna University Chennai, organized by Information Security Education Awareness (ISEA) by MeitY",
+      "technologies": [],
+      "images": ["/cybersecurity_certi.jpg", "/cyber.jpg"],
+      "linkedinUrl": "https://www.linkedin.com/posts/sreya-m-nambiar-5881aa27b_cybersecurity-networksecurity-bootcamp-activity-7408033002838011905-TsC-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQxrLgBoagj7TidqAqrP3BC4T5fFWbbsPw",
+      "websiteUrl": ""
+    },
+    {
+      "icon": "FaCode",
+      "title": "Training Sessions",
+      "year": "2025",
+      "status": "Classes",
+      "description": "Taught Python & C to freshers",
+      "fullDescription": "Conducted comprehensive training sessions for junior students and freshers in Python and C programming languages. Delivered both online and offline classes, helping beginners build strong programming fundamentals and develop practical coding skills.",
+      "technologies": ["Python Programming", "C Programming"],
+      "images": ["/python_certi.jpg", "/python1.jpg", "/python2.jpg", "/c_tran.jpeg"],
+      "linkedinUrl": "https://www.linkedin.com/posts/sreya-m-nambiar-5881aa27b_theres-something-magical-about-watching-activity-7359897658372608000-_Gje?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQxrLgBoagj7TidqAqrP3BC4T5fFWbbsPw",
+      "websiteUrl": ""
+    },
+    {
+      "icon": "FaAward",
+      "title": "Infosys Techzooka",
+      "year": "2024",
+      "status": "3rd Runner Up",
+      "description": "Infosys Techzooka 2024",
+      "fullDescription": "Secured 3rd Runner Up position at Infosys Techzooka 2024, showcasing innovative technical solutions. We pitched our project Microzard - a weed detection system designed to help farmers identify and manage weeds efficiently, leveraging AI and computer vision to improve agricultural productivity.",
+      "technologies": ["Python", "YoloV5"],
+      "images": ["/infosys_pic.jpeg", "/infosys_certificate.jpeg"],
+      "linkedinUrl": "",
+      "websiteUrl": ""
+    },
+    {
+      "icon": "FaCode",
+      "title": "Dpurpose - Anna University",
+      "year": "2024",
+      "status": "Pitched",
+      "description": "Pitched project at Anna University",
+      "fullDescription": "Presented and pitched MicroZard project at Anna University's Dpurpose event. Demonstrated technical expertise and problem-solving capabilities to judges and industry experts.",
+      "technologies": ["Python", "Yolov5", "Innovation"],
+      "images": ["/dpurpose_certificate.jpeg"],
+      "linkedinUrl": "https://www.linkedin.com/posts/sreya-m-nambiar-5881aa27b_innovation-technology-teammicrozard-activity-7213201335112847361-WvCW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQxrLgBoagj7TidqAqrP3BC4T5fFWbbsPw",
+      "websiteUrl": ""
+    },
+    {
+      "icon": "FaAward",
+      "title": "UI Figma Design Competition",
+      "year": "2024",
+      "status": "3rd Runner Up",
+      "description": "Won 3rd place in Figma design",
+      "fullDescription": "Won 3rd place in the Figma Fusion PixelPlus Gaming Web Development Workshop competition. Designed a comprehensive Fortnite-themed gaming website with modern UI/UX principles, creating an immersive user experience with sleek aesthetics and intuitive navigation.",
+      "technologies": ["Figma", "UI/UX Design", "Gaming Design"],
+      "images": ["/ui_certificate.png", "/ui_project.png"],
+      "linkedinUrl": "https://www.linkedin.com/posts/sreya-m-nambiar-5881aa27b_pixelplus-figmafusion-gamedevelopment-activity-7190742470517768193-DUsT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQxrLgBoagj7TidqAqrP3BC4T5fFWbbsPw",
+      "websiteUrl": ""
+    },
+    {
+      "icon": "FaCode",
+      "title": "College Hackathons & Symposiums",
+      "year": "2023-2025",
+      "status": "Multiple Wins",
+      "description": "Won and participated in various hackathons",
+      "fullDescription": "Actively participated and won prizes in multiple college hackathons and technical symposiums. Gained extensive experience in competitive coding, teamwork, and rapid prototyping.",
+      "technologies": [],
+      "images": ["/pec_hacks.jpg", "/ieee_Wie.jpg", "/zenith_pic.jpg", "/sympo_eie.jpg", "/shashun.jpg", "/vels.jpg", "/zenith.jpg"],
+      "linkedinUrl": "",
+      "websiteUrl": ""
+    }
+  ]
+}

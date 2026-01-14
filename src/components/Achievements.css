@@ -1,0 +1,400 @@
+.achievements {
+  background: var(--dark);
+  padding: 100px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--light);
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: var(--gradient);
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--gray);
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.achievements-scroll-container {
+  position: relative;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.achievements-grid {
+  display: flex;
+  gap: 25px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px 5px 30px 5px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #6c5ce7 rgba(108, 92, 231, 0.1);
+  width: 100%;
+}
+
+/* Custom scrollbar - always visible */
+.achievements-grid::-webkit-scrollbar {
+  height: 12px;
+  display: block;
+}
+
+.achievements-grid::-webkit-scrollbar-track {
+  background: rgba(108, 92, 231, 0.15);
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.achievements-grid::-webkit-scrollbar-thumb {
+  background: var(--gradient);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.achievements-grid::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5b4bc4 0%, #8f86e8 50%, #e85d91 100%);
+  background-clip: padding-box;
+}
+
+.achievement-card {
+  min-width: 350px;
+  max-width: 350px;
+  background: var(--darker);
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid rgba(108, 92, 231, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(108, 92, 231, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.achievement-card:hover::before {
+  left: 100%;
+}
+
+.achievement-status {
+  display: inline-block;
+  padding: 5px 15px;
+  background: rgba(108, 92, 231, 0.2);
+  color: var(--secondary);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.achievement-icon {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 10px rgba(108, 92, 231, 0.5));
+}
+
+.achievement-year {
+  display: block;
+  color: var(--secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.achievement-card h4 {
+  font-size: 1.5rem;
+  color: var(--light);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.achievement-card p {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* Achievement Modal */
+.achievement-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.achievement-modal {
+  background: var(--darker);
+  border-radius: 25px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border: 1px solid rgba(108, 92, 231, 0.3);
+  box-shadow: 0 20px 60px rgba(108, 92, 231, 0.5);
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(108, 92, 231, 0.2);
+  border: none;
+  color: var(--light);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.modal-close:hover {
+  background: var(--primary);
+  transform: rotate(90deg);
+}
+
+.modal-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 40px 40px 20px 40px;
+  border-bottom: 1px solid rgba(108, 92, 231, 0.2);
+}
+
+.modal-icon {
+  font-size: 3.5rem;
+  color: var(--primary);
+  filter: drop-shadow(0 0 15px rgba(108, 92, 231, 0.6));
+}
+
+.modal-header h2 {
+  font-size: 1.8rem;
+  color: var(--light);
+  margin-bottom: 10px;
+}
+
+.modal-meta {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.modal-status {
+  background: rgba(108, 92, 231, 0.2);
+  color: var(--secondary);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.modal-year {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+.modal-content {
+  padding: 30px 40px 40px 40px;
+}
+
+.modal-description {
+  color: var(--gray);
+  line-height: 1.8;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.modal-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.modal-images:has(img:only-child) {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-images:has(img:only-child) img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.modal-images img {
+  width: 100%;
+  height: auto;
+  min-height: 200px;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 15px;
+  border: 1px solid rgba(108, 92, 231, 0.2);
+  transition: transform 0.3s ease;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.modal-images img:hover {
+  transform: scale(1.05);
+}
+
+.modal-technologies {
+  margin-bottom: 25px;
+}
+
+.modal-technologies h4 {
+  color: var(--light);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.modal-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.modal-tech-tag {
+  background: rgba(108, 92, 231, 0.2);
+  color: var(--secondary);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.modal-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.modal-linkedin-btn,
+.modal-website-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gradient);
+  color: var(--light);
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.modal-website-btn {
+  background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+}
+
+.modal-linkedin-btn:hover,
+.modal-website-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(108, 92, 231, 0.5);
+}
+
+.modal-website-btn:hover {
+  box-shadow: 0 10px 30px rgba(0, 180, 219, 0.5);
+}
+
+.modal-linkedin-btn svg,
+.modal-website-btn svg {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .achievement-card {
+    min-width: 280px;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .achievements {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .achievement-card {
+    min-width: 260px;
+    max-width: 260px;
+    padding: 25px;
+  }
+
+  .modal-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px 20px 20px;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-images {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-close {
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+  }
+}
