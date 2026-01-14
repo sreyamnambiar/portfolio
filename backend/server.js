@@ -6,8 +6,18 @@ require('dotenv').config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
-app.use(cors());
+// Middleware - Configure CORS to allow Vercel domains
+app.use(cors({
+  origin: [
+    'https://www.sreyamnambiar.com',
+    'https://sreyamnambiar.com',
+    'https://portfolio-three-beryl-84.vercel.app',
+    /\.vercel\.app$/,  // Allow all Vercel preview deployments
+    'http://localhost:5173'  // Allow local development
+  ],
+  methods: ['GET', 'POST', 'OPTIONS'],
+  credentials: true
+}));
 app.use(express.json());
 
 // Email transporter configuration
